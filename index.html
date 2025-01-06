@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thazh Social</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header>
+      <h1>Thazh Social</h1>
+      <button id="logout-btn" style="display: none;">Đăng xuất</button>
+    </header>
+
+    <!-- Authentication Section -->
+    <div id="auth">
+      <h1>Kết nối với bạn bè</h1>
+      <div id="login-form">
+        <h2>Đăng Nhập</h2>
+        <input type="text" id="login-username" placeholder="Tên đăng nhập" />
+        <input type="password" id="login-password" placeholder="Mật khẩu" />
+        <button id="login-btn">Đăng nhập</button>
+        <p>Chưa có tài khoản? <span id="show-register" class="link">Đăng ký</span></p>
+      </div>
+      <div id="register-form" style="display: none;">
+        <h2>Đăng Ký</h2>
+        <input type="text" id="register-username" placeholder="Tên đăng nhập" />
+        <input type="password" id="register-password" placeholder="Mật khẩu" />
+        <button id="register-btn">Đăng ký</button>
+        <p>Đã có tài khoản? <span id="show-login" class="link">Đăng nhập</span></p>
+      </div>
+    </div>
+
+    <!-- Main Section -->
+    <div id="main" style="display: none;">
+      <section id="post-section">
+        <textarea id="post-content" placeholder="Bạn đang nghĩ gì?"></textarea>
+        <input type="file" id="video-upload" class="video-upload" accept="video/*" />
+        <button id="post-btn">Đăng bài</button>
+      </section>
+      <section id="posts"></section>
+    </div>
+
+    <!-- Notifications -->
+    <div class="notifications" id="notifications" style="display: none;">
+      <h3>Thông báo:</h3>
+      <ul id="notification-list"></ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Thazh Social &copy; 2025</p>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
